@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="buildStyle.css" rel="stylesheet">
+</head>
+<body>
+<form id="regForm" action="createItinerary.php" method="POST">
+    <h1>Build Your Own Customized Trip Plan</h1>
+    <h4 style="font-style: oblique; text-align: center;">Make organizing your trip plans a breeze</h4>    
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+    <h3>Destination</h3>
+    <input type="text" id="destination" name="destination" placeholder="Where do want to go?" required>
+    <br><br>
+  </div>
+  <div class="tab">
+    <h3>Start Date</h3> <input type="date" id="startDate" required>
+    <p></p>
+    <h3>End Date</h3> <input type="date" id="endDate" required>
+    <br><br>
+  </div>
+  <div class="tab">
+        <h3>Travelers: </h3><input type="number" placeholder="2" min=0 required> 
+        <br><br>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+<div id="map"></div>
+<script>
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}</script>
+<script src="buildScript.js"></script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZDQEzRgta2BKaWZTVEJ28EA-EEQheeG4&callback=initMap">
+          </script>
+</body>
+</html>

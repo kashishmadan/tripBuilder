@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Home Page
+    </title>
+<link rel="stylesheet" href="indexStyle.css"/>
+<link rel="stylesheet" href="loginPage.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<style>
+a{
+  text-decoration: none;
+}
+</style>
+
+<script src="login.js"></script>
+
+</head>
+<body>
+            <div  id="divTag">
+                 <a href="index.html" id="navHome"><img src="images/finLogo.png.png" id="logoPic" >
+                  <button  id="buttonLogo">TripBuilder</button>
+                </a>
+                 <span> 
+                     <a href="signUp.html">
+                    <button  class="buttonsfirst"  style="float:right">Sign Up</button>
+                    </a>
+                 </span>  
+                 <span >
+                      <button class="buttonsfirst" id="login" style="float:right" onclick="document.getElementById('id01').style.display='block'">Login</button>
+                  </span>
+                
+                 </div>
+                 <div id="id01" class="modal">
+  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="images/icons8-person-80.png" alt="Avatar" class="avatar">
+                      </div>
+                  
+                      <div class="container">
+                        
+                        <label for="uname" style="font-size: 24px; color: aliceblue;"><b>Username</b></label>
+                        <input type="text" id="userName" placeholder="Enter Username" name="uname" required>
+                  
+                        <label for="psw" style="font-size: 24px; color: aliceblue;" ><b>Password</b></label>
+                        <input type="password" id="pass" placeholder="Enter Password" name="psw" required >
+                  <a href="myIti2.html">
+                     <!--<button type="submit" id="loginButt" >Login</button>
+                        </a>  -->
+                        <a href="myIti2.html">
+                        <button type="button"  id="loginButt">Login</button>
+                        </a>
+                        <label style="font-size: 20px; color: aliceblue;">
+                          <input type="checkbox" checked="checked" name="remember" > Remember Me
+                        </label>
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f17a">
+                        
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                  </div>
+
+                 <div id="initContent" class="w3-container w3-center w3-animate-opacity"> <h1 style="font-weight:800px; font-size: 50px;">An easier trip,
+                    every time </h1>
+                    <h3 style="font-weight: 500px;">
+                    Imagine checking one place for all your travel details and getting a heads up as things happen throughout your trip. See why life without TripIt is a distant memory 
+                    for millions of travelers.</h3></div>
+                    <a href="itenararySample.html"><button id="btnOver" class="w3-container w3-center w3-animate-opacity">Get Started</button></a>
+            
+<div class="parallax" id="particles-js"></div>
+
+<div class="divPar">
+        <img src="images/1962177.jpg" class="leftImg" data-aos="fade-up">  
+        <span class="rightSpan" data-aos="fade-up"><p class="upText">You handle the booking, we'll take it from there</p>
+          <p class="lowText">Tell us where and when you
+          want to go, we will build the best sightseeing itinerary</p>
+          </span>
+</div>
+
+<div class="parallax2"></div>
+<div class="divPar">
+        <img src="images/img3.jpg" class="rightImg" data-aos="fade-up">
+        <span class="leftSpan" data-aos="fade-up"><p class="upText">Make the most of all your trips</p>
+        <p class="lowText">It does not have to be complex to be effective.</p></span>
+</div>
+<div class="parallax3"></div>
+<div class="divPar">
+        <img src="images/trip.jpg" class="leftImg" data-aos="fade-up">
+        <span class="rightSpan" data-aos="fade-up"><p class="upText">Always know where to be and when</p>
+        <p class="lowText">Add activities, accommodations,flights, transportation and transfers</p></span>
+    </div>
+    <div class="parallax4"></div>
+    <div id="footerdiv">
+            <footer>
+                <center>
+                    <br>
+                <a href="AboutUs.html" target="self" rel="author"><bold class="foot">About Us</bold></a>
+                <br/>
+                <br/>
+          
+                <a href="AboutUs.html" target="self" rel="author"><bold class="foot">Contact Us</bold></a>
+                <br/>
+                <br/>
+                 <a href="mailto:tripbuilder@gmail.com?Subject=Hello%20again" target="self" rel="author"><bold class="foot">Suggestions</bold></a>    
+            </center>
+            </footer>
+            </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({duration:400,});
+</script>
+<script src="particles.js"></script>
+<script src="app2.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url("images/clouds.gif.gif");
+  
+    /* Full height */
+    height: 100%; 
+  z-index: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  #logoPic{
+    margin-left: -50px;
+   margin-top: -28px;
+    width:200px;
+    height: 150px;
+    color: rgb(216, 43, 30);
+  }
+  #buttonLogo{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 40px;
+    margin-left: -5%;
+    font-family: 'Sofia';
+    color:white;
+      }
+  #btnOver{
+      z-index: 20;
+      position: absolute;
+      width: 15%;
+      height: 10%;
+      margin-top: 500px;
+      margin-left: 580px;;
+      background-color:#f39c12;
+      border-color:#f39c12;
+      border-radius: 5px;;
+      color: rgb(59, 34, 1);
+      font-weight: bolder;
+      font-size: large;
+  }
+  .parallax2 {
+    /* The image used */
+    background-image: url('images/venice.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax3 {
+    /* The image used */
+    background-image: url('images/snow4.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax4 {
+    /* The image used */
+    background-image: url('images/balloon.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .buttonsfirst
+  {   margin:13px;
+      background-color:white;
+      padding: 6px;
+      width:120px;
+      border-radius: 5px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bolder;
+     border:5px solid rgb(3, 24, 82);  
+     
+      background-color:white;
+    /*  color: rgb(241, 241, 241);  */
+      font-size:medium;
+      margin-right: 50px;;
+  }
+  .buttonsfirst:hover
+  {
+      background-color: #f39c12;
+  }
+
+  #divTag{  width:100%;
+    height: 80px;
+    position:fixed;
+    background-color:rgba(4, 51, 112, 0.397); 
+    opacity:1;
+    z-index: 100;
+}
+.dashboard
+{
+    background-color: rgb(31, 135, 143);
+    padding: 6px;
+    width: 120px;
+    border-radius: 15px;
+    font-weight: bolder;
+    border:5px solid rgb(18,142,151);
+    color:white;
+    font-size: large;
+    margin-left:40px;
+    margin-top: 15px;
+}
+.dashboard:hover, .dashboard:focus
+{
+  background-color: rgb(24, 100, 105);
+}
+#login
+{
+    background-color: white;
+    border-radius: 5px;
+    width:120px;
+    height:43trpx;
+   
+    margin-right:50px;
+    margin-top:14px;
+    font-weight: bold;
+    border:5px solid rgb(3, 24, 82);   
+      background-color:white;
+}
+#login:hover{
+    background-color:
+rgb(255, 194, 62)}
+
+.leftImg
+{
+    float: left;
+    width: 500px;
+    height: 430px;
+    margin-top: 50px;
+    margin-left: 50px;;
+}
+.rightImg{
+    float:right;
+    
+    width: 500px;
+    height: 430px;
+    margin-top: 50px;
+    margin-right: 50px;;
+}
+.divPar {
+    
+        height: 520px;;
+    
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+
+    0%   {background-color:rgb(3, 175, 55); }
+  25%  {background-color:rgb(221, 155, 12); }
+  50%  {background-color:rgb(36, 159, 168) }
+  75%  {background-color:rgba(216, 75, 110, 0.904)}
+  100% {background-color:rgb(231, 132, 39) ;}
+  }
+ 
+
+  .rightSpan{
+      float: right;
+      background-color:transparent;
+      height: 400px;
+      width:500px;
+      margin-right: 100px;
+      margin-top: 50px;;
+      animation-name: bottUp;
+ 
+      color:rgb(255, 216, 190);
+  }
+  .leftSpan
+  {
+    float: left;
+    background-color:transparent;
+    height: 400px;
+    width:500px;
+    margin-left: 100px;
+    margin-top: 50px;;
+    animation-name: bottUp;
+    color:rgb(255, 216, 190);
+
+  }
+  .upText{
+    font-size:36px;
+    font-weight: bold;
+    text-align: center;
+    padding-left:20px;;
+    padding-right:20px;
+  }
+  .lowText{
+    font-size:25px;  
+  font-weight: 100px;
+  text-align: center;
+}
+
+  #initContent{
+    z-index: 20;
+    position: absolute;
+    text-align: center;
+    margin-top: 150px;;
+    width: 50%;
+    margin-left: 350px;;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+
+  #footerdiv
+{
+   
+    opacity:1;
+    left:0px;
+    height:200px;
+    margin-left: 0px;;
+    font-size: large;
+    font-weight: bolder;
+    width: 100%;
+    padding-bottom: 22px;
+    background-color:rgba(4, 51, 112); 
+   background-repeat:repeat-x;
+   text-decoration: none;
+
+}
+.foot
+{   padding-top: 20px;;
+    color:white;
+    text-decoration: none;
+}
